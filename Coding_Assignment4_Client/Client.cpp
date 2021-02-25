@@ -1,3 +1,4 @@
+//Client Process
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h> 
@@ -39,7 +40,7 @@ int _tmain()
 
         return 1;
     }
-
+    //Client Process displaying the content of the shared memory
     MessageBox(NULL, pBuf, TEXT("Process2"), MB_OK);
 
     UnmapViewOfFile(pBuf);

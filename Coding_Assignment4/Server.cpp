@@ -1,3 +1,8 @@
+//CODING ASSINGMENT 4
+//INTER PROCESS COMMUNICATION
+//Implement Inter Process Communication using shared memory with the help of Windows functions available.
+
+//Server Process
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h>
@@ -42,7 +47,7 @@ int _tmain()
         return 1;
     }
 
-
+    //Server process writing to the shared memory
     CopyMemory((PVOID)pBuf, szMsg, (_tcslen(szMsg) * sizeof(TCHAR)));
     _getch();
 
